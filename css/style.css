@@ -527,7 +527,6 @@ img {
   margin-left: 16px;
 }
 .backdrob {
-  padding: 72px 24px 24px 24px;
   position: fixed;
   top: 0;
   left: 0;
@@ -541,6 +540,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
@@ -579,8 +579,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-icon:focus-within {
   fill: #ffffff;
 }
 
@@ -619,6 +618,12 @@ img {
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-text-item:checked .modal-form-quality {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .modal-form-icon {
