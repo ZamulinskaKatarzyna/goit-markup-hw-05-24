@@ -560,6 +560,7 @@
               </svg>
             </div>
           </div>
+          <!--komentarz-->
           <div class="modal-form-items comment-info">
             <label class="modal-form-quality" for="user-comment">Comment</label>
             <div class="modal-name-text">
@@ -569,10 +570,23 @@
                 name="user-comment"
                 placeholder="Text input"
               ></textarea>
-
-              <svg class="modal-form-icon" width="18" height="24">
-                <use href=""></use>
-              </svg>
+            </div>
+            <!--okno z Privacy Policy-->
+             <div class="modal-policy">
+              <input class="policy-quality visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy"/>
+              <label class="modal-policy-item" for="user-privacy">
+                <span class="modal-policy-text">
+                  <svg  class="policy-icon" width="10" height="8">
+                    <use href=""></use>
+                  </svg>
+                </span> 
+                I accept the term and conditions of the 
+                <a class="policy-link" href="">Privacy Policy</a>
+              </label>
+            </div>
+            <!--Przycisk send-->
+            <button class="modal-submit-button" type=" submit">Send</button>
+          
             </div>
           </div>
         </form>
